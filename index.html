@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #cccccc">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles/list.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.5.0/build/cssreset/reset-min.css&amp;3.5.0/build/cssfonts/fonts-min.css&amp;3.5.0/build/cssgrids/grids-min.css&amp;3.5.0/build/cssbase/base-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.5.0/build/cssreset/cssreset.css" type="text/css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.5.0/build/cssfonts/cssfonts.css" type="text/css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.5.0/build/cssgrids/cssgrids.css" type="text/css">
+    <script src="http://yui.yahooapis.com/3.5.0/build/yui/yui-min.js"></script>
+    <title>CodedRight.net</title>
+</head>
+<body class="yui3-skin-sam"> 
+<div class="yui3-g" id="bd">
+  <div class="yui3-u-3-4">
+
+<div id="banner"><img src="images/logo.png" alt="Get it CodedRight&tm;" />
+    <div class="content">
+  <div id="productsandservices" class="yui3-menu yui3-menu-horizontal"><!-- Bounding box -->
+    <div class="yui3-menu-content"><!-- Content box -->
+      <ul class="first-of-type">
+        <li class="yui3-menuitem"><a class="yui3-menuitem-content" href="http://www.codedright.net/">Home</a></li>
+        <li class="yui3-menuitem"><a class="yui3-menuitem-content" href="http://www.codedright.net/contact">Contact</a></li>
+
+          <li>
+            <a class="yui3-menu-label" href="#connect">Info</a>
+              <div id="connect" class="yui3-menu">
+                <div class="yui3-menu-content">
+                  <ul>
+                    <li class="yui3-menuitem"><a class="yui3-menuitem-content" href="http://www.codedright.net/about">About</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
+<div id="main">
+ <p> Main shits</p>
+</div>
+<div id="footer">
+Copyright &copy; 2012 CodedRight.net
+</div>
+<!--CodedRight.net-->
+
+
+  <script type="text/javascript">
+  //  Call the "use" method, passing in "node-menunav".  This will load the
+//  script and CSS for the MenuNav Node Plugin and all of the required
+//  dependencies.
+
+YUI().use('node-menunav', function(Y) {
+
+    //  Retrieve the Node instance representing the root menu
+    //  (<div id="productsandservices">) and call the "plug" method
+    //  passing in a reference to the MenuNav Node Plugin.
+
+    var menu = Y.one("#productsandservices");
+
+    menu.plug(Y.Plugin.NodeMenuNav);
+
+});
+</script>
+
+
+</body>
+</html>
