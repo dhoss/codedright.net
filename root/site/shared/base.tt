@@ -7,7 +7,7 @@ MACRO ref(var) BLOCK;
 END;
 
 # Wraps c.uri_for to point to static resources either inside the
-# /root/static structure or explicit URIs.  Assumes 
+# /root/static structure or explicit URIs.  Assumes
 MACRO static(res, versioned, query) BLOCK;
     uri_params = query || {};
     IF res.match('^https?://') || res.match('^/');
@@ -24,7 +24,7 @@ END;
 IF !page || !ref(page) == 'HASH';
     page = {};
 END;
-DEFAULT page.title  = c.config.name || 'CodedRight::Web';
+DEFAULT page.title  = c.config.name || 'CodedRight.net - Get it CodedRight&copy;';
 DEFAULT page.layout = 'default';
 DEFAULT page.header = 'default';
 DEFAULT page.nav    = 'default';
@@ -43,6 +43,6 @@ DEFAULT page.body.scripts     = [
 DEFAULT page.content_class    = 'content';
 
 # Include global macros/vars/set up per implementation
-TRY; PROCESS site/global.tt; CATCH file; END;
+TRY; PROCESS global.tt; CATCH file; END;
 
 ~%]

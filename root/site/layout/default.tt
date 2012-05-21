@@ -1,4 +1,24 @@
-[%~ 
+[%~
 # Nothing fancy here.  Just dump the content.
 content
 ~%]
+
+<script type="text/javascript">
+//  Call the "use" method, passing in "node-menunav".  This will load the
+//  script and CSS for the MenuNav Node Plugin and all of the required
+//  dependencies.
+
+YUI().use('node-menunav', function(Y) {
+
+    //  Retrieve the Node instance representing the root menu
+    //  (<div id="productsandservices">) and call the "plug" method
+    //  passing in a reference to the MenuNav Node Plugin.
+
+    var menu = Y.one("#productsandservices");
+
+    menu.plug(Y.Plugin.NodeMenuNav);
+
+});
+</script>
+
+
