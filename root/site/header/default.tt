@@ -1,9 +1,0 @@
-<div id="header">
-
-<div id="banner"><img src="[% c.uri_for('/static/images/logo.png') %]" alt="Get it CodedRight&tm;" /></div>
-</div>
-[% # Include the navigation
-IF page.nav && page.nav != 'none';
-    PROCESS "nav/${page.nav}.tt";
-END;
-~%]
