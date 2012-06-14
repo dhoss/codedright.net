@@ -61,7 +61,7 @@
         <h1>Contact</h1>
         <p><%= stash('message') =%></p>
         <p><%= stash('error')  =%>
-       <form class="form-horizontal" method="POST" action="/">
+       <form class="form-horizontal" method="POST" action="/contact">
   <fieldset>
     <legend>Tell us about you</legend>
     <div class="control-group">
