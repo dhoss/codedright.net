@@ -59,10 +59,9 @@
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Contact</h1>
-        <% if (stash('message') ) { %>
         <p><%= stash('message') =%></p>
-        <% } %>
-       <form class="form-horizontal" method="POST" action="/contact">
+        <p><%= stash('error')  =%>
+       <form class="form-horizontal" method="POST" action="/">
   <fieldset>
     <legend>Tell us about you</legend>
     <div class="control-group">
@@ -93,6 +92,12 @@
       <label class="control-label" for="textarea01">Your comments</label>
       <div class="controls">
         <textarea name="comments" id="textarea01" rows="15" class="input-xlarge"></textarea>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="captcha01">Please verify you aren't a robot</label>
+      <div class="controls">
+       What is 2 + 2? <input type="text" name="captcha" class="input-xlarge">
       </div>
     </div>
     <div class="form-actions" id="yui_3_5_1_1_1339600093238_30">
